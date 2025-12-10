@@ -52,6 +52,6 @@ Neste projeto aprimorei meus fundamentos de **HTML semântico**, organização d
 
 ## 👤 Autor
 
-**Uelinton Janke**.
+**Uelinton Janke**
 
 LinkedIn: https://www.linkedin.com/in/uelinton-janke/
