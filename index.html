@@ -10,57 +10,67 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/coffee-icon.jpeg" class="img-logo" alt="Logo Ignite Coffee">
-            <h1>Ignite Coffee</h1>
+    <header class="header">
+        <div class="header__brand">
+            <img src="assets/coffee-icon.jpeg" class="header__logo" alt="Logo Ignite Coffee" />
+            <h1 class="header__title">Ignite Coffee</h1>
         </div>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#menu">Menu</a>
-            <a href="#contato">Contato</a>
-        </nav>
 
-        <button class="menu-btn" id="menu-btn">
+        <button class="header__menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 72 72">
                 <path
                     d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z">
                 </path>
             </svg>
         </button>
+
+        <nav class="header__nav" aria-label="Navegação principal">
+            <a href="#home">Início</a>
+            <a href="#menu">Menu</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
-    <section class="hero" id="home">
-        <h2>O café que acende o seu dia</h2>
-        <p>Uma experiência única com grãos selecionados, ambiente acolhedor e aquele aroma que transforma sua manhã.</p>
-        <a href="#menu" class="btn">Ver Cardápio</a>
-    </section>
+    <main>
+        <section class="hero" id="home">
+            <h2>O café que acende o seu dia</h2>
+            <p>
+                Uma experiência única com grãos selecionados, ambiente acolhedor e aquele aroma que transforma sua
+                manhã.
+            </p>
+            <a href="#menu" class="btn">Ver Cardápio</a>
+        </section>
 
-    <section class="menu-section" id="menu">
-        <h3>Nosso Cardápio</h3>
-        <div class="menu-grid">
-            <div class="card">
-                <img src="assets/espresso.jpeg" alt="ícone Espresso">
-                <h4>Expresso</h4>
-                <p>Forte, aromático e intenso</p>
-            </div>
-            <div class="card">
-                <img src="/assets/latte.jpeg" alt="ícone Latte">
-                <h4>Latte</h4>
-                <p>Equilíbrio perfeito entre leite e café</p>
-            </div>
-            <div class="card">
-                <img src="/assets/cappuccino.png" alt="ícone Cappuccino">
-                <h4>Cappuccino</h4>
-                <p>Cremoso e irresistível</p>
-            </div>
-            <div class="card">
-                <img src="/assets/mocha.png" alt="ícone Mocha">
-                <h4>Mocha</h4>
-                <p>Chocolate + café = felicidade</p>
-            </div>
-        </div>
-    </section>
+        <section class="menu" id="menu">
+            <header class="menu__header">
+                <h3>Nosso Cardápio</h3>
+            </header>
+
+            <ul class="menu__list">
+                <li class="menu-card">
+                    <img src="assets/espresso.jpeg" alt="Café Espresso">
+                    <h4>Expresso</h4>
+                    <p>Forte, aromático e intenso</p>
+                </li>
+                <li class="menu-card">
+                    <img src="/assets/latte.jpeg" alt="Café Latte">
+                    <h4>Latte</h4>
+                    <p>Equilíbrio perfeito entre leite e café</p>
+                </li>
+                <li class="menu-card">
+                    <img src="/assets/cappuccino.png" alt="Cappuccino">
+                    <h4>Cappuccino</h4>
+                    <p>Cremoso e irresistível</p>
+                </li>
+                <li class="menu-card">
+                    <img src="/assets/mocha.png" alt="Café Mocha">
+                    <h4>Mocha</h4>
+                    <p>Chocolate + café = felicidade</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
 
     <footer id="contato">
         © 2025 Ignite Coffee - Criado por Uelinton Janke
