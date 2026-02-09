@@ -32,7 +32,9 @@ body {
     align-items: center;
     background-color: var(--color-bg-header);
     box-shadow: var(--shadow-default);
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header__brand {
@@ -56,6 +58,22 @@ body {
     text-decoration: none;
     color: var(--color-primary);
     font-weight: 600;
+    position: relative;
+}
+
+.header__nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.2s ease;
+}
+
+.header__nav a:hover::after {
+    width: 100%;
 }
 
 .header__menu-btn {
@@ -113,6 +131,23 @@ body {
     background-color: var(--color-primary-dark);
 }
 
+.button-secondary {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 10px 26px;
+    border: 2px solid var(--color-text-light);
+    color: var(--color-text-light);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2 ease, color 0.2s ease;
+}
+
+.button-secondary:hover {
+    background-color: var(--color-text-light);
+    color: var(--color-primary);
+}
+
 .menu {
     padding: 60px 20px;
     text-align: center;
@@ -137,11 +172,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: var(--shadow-default);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-card:hover {
-    transform: translateY(-4px)
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(153, 88, 42, 0.35);
 }
 
 .menu-card img {
