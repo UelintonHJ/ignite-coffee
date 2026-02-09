@@ -1,6 +1,6 @@
 # ☕ [Ignite Coffee — Landing Page](https://ignite-coffee-landing-page.vercel.app/)
 
-Ignite Coffee é uma landing page para uma cafeteria fictícia, criada inicialmente como umm projeto de prática em **HTML e CSS**, e posteriormente **refatorada de forma incremental** para refletir boas práticas modernas de front-end, UX e organização de código.
+Ignite Coffee é uma landing page para uma cafeteria fictícia, criada inicialmente como um projeto de prática em **HTML e CSS**, e posteriormente **refatorada de forma incremental** para refletir boas práticas modernas de front-end, UX e organização de código.
 
 Este projeto não foi reescrito do zero. Ele foi **evoluído**.
 
