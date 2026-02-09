@@ -85,8 +85,8 @@ Pensar como dono do produto muda a forma como escrevo código: cada decisão fac
 git clone https://github.com/UelintonHJ/ignite-coffee.git
 cd ignite-coffee
 ```
-Abra o arquivo index.html no navegador
-Ou acesse a versão online:
+Abra o arquivo index.html no navegador <br/>
+Ou acesse a versão online: <br/>
 [https://ignite-coffee-landing-page.vercel.app/](https://ignite-coffee-landing-page.vercel.app/)
 
 ---
